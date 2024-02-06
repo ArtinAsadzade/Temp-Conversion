@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  font-family: "Roboto", sans-serif;
+  --color: rgb(43, 68, 180);
+  --color2: rgb(157, 239, 241);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  color: rgb(255, 255, 255);
+  background-image: url(../img/bg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 20px;
+}
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 15px;
+}
+
+header img {
+  width: 50px;
+}
+label {
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  
+}
+.main {
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  background-color: rgba(2, 56, 70, 0.144);
+  padding: 80px 40px;
+  border-radius: 10px;
+
+}
+input {
+  margin: 50px 0 10px;
+  padding: 7px;
+  font-size: 20px;
+  border: none;
+  border-radius: 3px;
+}
+input:focus {
+  border: solid 2px black;
+  outline: 0;
+  border-radius: 8px;
+  transition: 0.5s;
+
+}
+.result {
+  margin: 10px 0 50px;
+  font-size: 26px;
+  color: rgb(255, 255, 102);
+  letter-spacing: 1px;
+  height: 1em;
+  font-weight: bold;
+}
+
+button {
+  width: 200px;
+  margin: 0 30px;
+  padding: 10px 30px;
+  background: none;
+  border-radius: 5px;
+  font-size: 25px;
+  transition: black 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 5px black;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+button:hover {
+  color: white;
+  border: solid 3px black;
+  box-shadow: 3px 3px 7px black;
+}
+
+/* ------> Media queries <------ */
+@media screen and (max-width: 500px){ /*Smartphones*/
+  label{
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 1000px) {/*Bigger screens*/
+  button {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+}
